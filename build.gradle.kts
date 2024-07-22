@@ -18,6 +18,12 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	compileOnly("javax.servlet:javax.servlet-api:3.1.0")
+	compileOnly("org.apache.tomcat.embed:tomcat-embed-jasper")
+//	implementation("javax.servlet:jstl")
+// https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api
+	implementation("jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0")
+	implementation("org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.0")
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 
